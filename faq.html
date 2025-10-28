@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQs — YouthSpark</title>
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4F46E5',
+            secondary: '#10B981',
+            ink: '#0a0b10'
+          },
+          fontFamily: {
+            display: ['Poppins','ui-sans-serif','system-ui']
+          },
+          boxShadow: {
+            glow: '0 10px 30px rgba(79,70,229,.35), inset 0 1px 0 rgba(255,255,255,.04)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-ink text-white font-display antialiased">
+  <div class="mesh-bg"></div>
+  <div class="noise-overlay"></div>
+  <div id="scrollbar"><div id="scrollfill"></div></div>
+
+  <!-- Nav -->
+   <nav class="sticky top-0 z-50 backdrop-blur bg-black/30 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+       <span class="w-8 h-8 rounded-lg glass-strong neon grid place-items-center shadow-glow overflow-hidden bg-black"><img src="assets\242704840_555691849056000_3791125399268383836_n-removebg-preview.png" alt="YouthSpark Logo" class="object-cover w-full h-full" />
+    </span>
+        <a href="index.html" class="text-xl font-extrabold hover:text-secondary transition">YouthSpark</a>
+      </div>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="index.html" class="text-white/80 hover:text-white transition">Home</a>
+        <a href="programs.html" class="text-white/80 hover:text-white transition">Programs</a>
+        <a href="free-resources.html" class="text-white/80 hover:text-white transition">Resources</a>
+        <a href="about.html" class="text-white/80 hover:text-white transition">About</a>
+        <a href="team.html" class="text-white/80 hover:text-white transition">Team</a>
+        <a href="volunteer.html" class="text-white/80 hover:text-white transition">Volunteer</a>
+        <a href="careers.html" class="text-white/80 hover:text-white transition">Careers</a>
+        <a href="donate.html" class="text-white/80 hover:text-white transition">Donate</a>
+        <a href="faq.html" class="text-white transition">FAQs</a>
+        <a href="contact-us.html" class="text-white/80 hover:text-white transition">Contact</a>
+      </div>
+      <button class="md:hidden p-2 glass-strong rounded-lg" aria-label="Open menu">
+        <i data-feather="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative overflow-hidden py-20">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 reveal">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-xl glass mb-4">
+          <i data-feather="help-circle" class="w-5 h-5 text-secondary"></i>
+          <span class="text-secondary font-semibold">Questions Answered</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6">
+          <span class="block">Frequently Asked</span>
+          <span class="block text-gradient">Questions</span>
+        </h1>
+        <p class="text-white/80 text-lg max-w-2xl mx-auto">
+          Find clear, honest answers to common questions about YouthSpark’s mission, programs, donations, volunteering, and more.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Accordion FAQ -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
+          <i data-feather="help-circle" class="w-8 h-8 text-secondary"></i>
+          General FAQs
+        </h2>
+        <div class="space-y-4">
+          <div class="glass rounded-xl p-6 neon faq-item">
+            <button class="flex items-center justify-between w-full faq-toggle">
+              <h3 class="font-bold text-lg">Is every YouthSpark program really free?</h3>
+              <i data-feather="chevron-down" class="w-5 h-5"></i>
+            </button>
+            <div class="faq-content text-white/80 mt-2 hidden">Yes! All YouthSpark programs, resources, and helplines are 100% free for youth and families who need them.</div>
+          </div>
+          <div class="glass rounded-xl p-6 neon faq-item">
+            <button class="flex items-center justify-between w-full faq-toggle">
+              <h3 class="font-bold text-lg">Who is eligible to join YouthSpark support and programs?</h3>
+              <i data-feather="chevron-down" class="w-5 h-5"></i>
+            </button>
+            <div class="faq-content text-white/80 mt-2 hidden">Youth ages 12–25, as well as parents and educators. Some mentoring events are focused on teens or specific challenges, but anyone can talk to our counselors or join most resources.</div>
+          </div>
+          <div class="glass rounded-xl p-6 neon faq-item">
+            <button class="flex items-center justify-between w-full faq-toggle">
+              <h3 class="font-bold text-lg">Is everything confidential?</h3>
+              <i data-feather="chevron-down" class="w-5 h-5"></i>
+            </button>
+            <div class="faq-content text-white/80 mt-2 hidden">Yes. We protect your privacy—calls, chats, emails, and group sessions are strictly confidential and not shared outside the core support team.</div>
+          </div>
+          <div class="glass rounded-xl p-6 neon faq-item">
+            <button class="flex items-center justify-between w-full faq-toggle">
+              <h3 class="font-bold text-lg">How do I reach someone fast?</h3>
+              <i data-feather="chevron-down" class="w-5 h-5"></i>
+            </button>
+            <div class="faq-content text-white/80 mt-2 hidden">Call +91-9876543210 or WhatsApp us for fastest support. For serious emergencies, contact a local emergency helpline as well.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-16">
+        <h2 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
+          <i data-feather="users" class="w-8 h-8 text-secondary"></i>
+          Programs & Volunteering
+        </h2>
+        <div class="space-y-4">
+          <div class="glass rounded-xl p-6 neon faq-item">
+            <button class="flex items-center justify-between w-full faq-toggle">
+              <h3 class="font-bold text-lg">How can I sign up for programs?</h3>
+              <i data-feather="chevron-down" class="w-5 h-5"></i>
+            </button>
+            <div class="faq-content text-white/80 mt-2 hidden">Start with the <a href="programs.html" class="text-secondary hover:text-primary underline">programs page</a> to see our offerings, or contact us to connect with a coordinator who will help you choose and enroll in sessions.</div>
+          </div>
+          <div class="glass rounded-xl p-6 neon faq-item">
+            <button class="flex items-center justify-between w-full faq-toggle">
+              <h3 class="font-bold text-lg">How do I become a volunteer or mentor?</h3>
+              <i data-feather="chevron-down" class="w-5 h-5"></i>
+            </button>
+            <div class="faq-content text-white/80 mt-2 hidden">Visit the <a href="volunteer.html" class="text-secondary hover:text-primary underline">volunteer page</a> to view open roles and apply online. Our manager will get in touch for training and onboarding steps.</div>
+          </div>
+          <div class="glass rounded-xl p-6 neon faq-item">
+            <button class="flex items-center justify-between w-full faq-toggle">
+              <h3 class="font-bold text-lg">Do I get certificates or credits?</h3>
+              <i data-feather="chevron-down" class="w-5 h-5"></i>
+            </button>
+            <div class="faq-content text-white/80 mt-2 hidden">Yes! Volunteers and program graduates can receive digital certificates and experience letters upon completion of milestones.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-16">
+        <h2 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
+          <i data-feather="gift" class="w-8 h-8 text-secondary"></i>
+          Donation & Funding
+        </h2>
+        <div class="space-y-4">
+          <div class="glass rounded-xl p-6 neon faq-item">
+            <button class="flex items-center justify-between w-full faq-toggle">
+              <h3 class="font-bold text-lg">Is my donation eligible for a tax exemption (80G)?</h3>
+              <i data-feather="chevron-down" class="w-5 h-5"></i>
+            </button>
+            <div class="faq-content text-white/80 mt-2 hidden">Yes. All donations above ₹500 get 80G exemption receipts. Email your details and screenshot to donate@youthspark.org after donating.</div>
+          </div>
+          <div class="glass rounded-xl p-6 neon faq-item">
+            <button class="flex items-center justify-between w-full faq-toggle">
+              <h3 class="font-bold text-lg">Can I get a receipt?</h3>
+              <i data-feather="chevron-down" class="w-5 h-5"></i>
+            </button>
+            <div class="faq-content text-white/80 mt-2 hidden">Absolutely. All donors receive a digital PDF receipt and letter, typically within 2 business days after sharing payment proof.</div>
+          </div>
+          <div class="glass rounded-xl p-6 neon faq-item">
+            <button class="flex items-center justify-between w-full faq-toggle">
+              <h3 class="font-bold text-lg">Can I donate UPI, bank, or in-kind?</h3>
+              <i data-feather="chevron-down" class="w-5 h-5"></i>
+            </button>
+            <div class="faq-content text-white/80 mt-2 hidden">UPI, QR, bank transfer, and select in-kind (stationery, books, food) support are accepted! See our <a href="donate.html" class="text-secondary hover:text-primary underline">donate page</a> for details.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-16 reveal text-center">
+        <h2 class="text-2xl font-bold mb-4 text-secondary">Need More Support?</h2>
+        <p class="text-white/80 mb-6">Still have questions? Our team will answer you personally via phone, email, or WhatsApp:</p>
+        <a href="contact-us.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-white shadow-glow hover:brightness-110 transition">
+          <i data-feather="mail" class="w-4 h-4"></i> Contact YouthSpark Team
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid xl:grid-cols-3 gap-8">
+        <div class="space-y-4 reveal">
+          <div class="flex items-center gap-2">
+            <span class="w-8 h-8 rounded-lg glass-strong neon grid place-items-center"><i data-feather="heart" class="w-4 h-4 text-white"></i></span>
+            <span class="text-xl font-extrabold">YouthSpark</span>
+          </div>
+          <p class="text-white/70">Empowering youth since 2015 — mentorship, recovery, skills, and purpose.</p>
+          <div class="flex gap-4">
+            <a class="text-white/70 hover:text-secondary hover:scale-110 transition" href="https://www.facebook.com/people/Youth-Care/100079715082112/" aria-label="Facebook"><i data-feather="facebook"></i></a>
+            <a class="text-white/70 hover:text-secondary hover:scale-110 transition" href="https://www.instagram.com/youth__care/" aria-label="Instagram"><i data-feather="instagram"></i></a>
+            <a class="text-white/70 hover:text-secondary hover:scale-110 transition" href="https://wa.me/919876543210" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+            <a class="text-white/70 hover:text-secondary hover:scale-110 transition" href="#" aria-label="YouTube"><i data-feather="youtube"></i></a>
+          </div>
+        </div>
+        <div class="xl:col-span-2 grid sm:grid-cols-3 gap-8 reveal">
+          <div>
+            <h4 class="text-white/80 font-semibold uppercase tracking-wider text-sm">Programs</h4>
+            <ul class="mt-4 space-y-3 text-white/70">
+              <li><a href="index.html#programs" class="hover:text-secondary transition">Mentorship</a></li>
+              <li><a href="index.html#programs" class="hover:text-secondary transition">Addiction Recovery</a></li>
+              <li><a href="index.html#programs" class="hover:text-secondary transition">Skill Workshops</a></li>
+              <li><a href="index.html#programs" class="hover:text-secondary transition">Career Guidance</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white/80 font-semibold uppercase tracking-wider text-sm">Support</h4>
+            <ul class="mt-4 space-y-3 text-white/70">
+              <li><a href="faq.html" class="hover:text-secondary transition">FAQs</a></li>
+              <li><a href="privacy-policy.html" class="hover:text-secondary transition">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-secondary transition">Terms of Service</a></li>
+              <li><a href="donate.html" class="hover:text-secondary transition">Donate</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white/80 font-semibold uppercase tracking-wider text-sm">Company</h4>
+            <ul class="mt-4 space-y-3 text-white/70">
+              <li><a href="about.html" class="hover:text-secondary transition">About</a></li>
+              <li><a href="team.html" class="hover:text-secondary transition">Team</a></li>
+              <li><a href="volunteer.html" class="hover:text-secondary transition">Volunteer</a></li>
+              <li><a href="careers.html" class="hover:text-secondary transition">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 pt-8 border-t border-white/10 text-center text-white/60">
+        © 2025 YouthSpark. All rights reserved. Registered NGO in India.
+      </div>
+    </div>
+  </footer>
+  <a href="help.html" id="contact-float" class="fixed bottom-5 right-5 z-50 bg-secondary text-white shadow-lg rounded-full px-5 py-3 flex items-center gap-2 hover:bg-primary hover:shadow-xl transition" title="Get Help">
+    <i data-feather="life-buoy"></i> Get Help
+  </a>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      feather.replace();
+      const fill = document.getElementById('scrollfill');
+      if (!CSS.supports('animation-timeline: scroll()')) {
+        window.addEventListener('scroll', () => {
+          const h = document.documentElement;
+          const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+          fill.style.width = (scrolled * 100).toFixed(2) + '%';
+        }, { passive: true });
+      }
+      // Accordion
+      document.querySelectorAll('.faq-toggle').forEach(btn => {
+        btn.addEventListener('click', function () {
+          const card = btn.closest('.faq-item');
+          const content = card.querySelector('.faq-content');
+          const icon = btn.querySelector('i[data-feather]');
+          document.querySelectorAll('.faq-item .faq-content').forEach(el => { if(el!==content) el.classList.add('hidden'); });
+          document.querySelectorAll('.faq-toggle i[data-feather]').forEach(el => { if(el!==icon) el.style.transform="rotate(0deg)"; });
+          content.classList.toggle('hidden');
+          icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+          icon.style.transition = 'transform 0.3s ease';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -12,7 +12,7 @@
 }
 .noise-overlay {
   position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .08;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+  background-image: url("assets\242704840_555691849056000_3791125399268383836_n.jpg");
   mix-blend-mode: overlay;
 }
 

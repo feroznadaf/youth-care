@@ -38,9 +38,8 @@
   <nav class="sticky top-0 z-50 backdrop-blur bg-black/30 border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <span class="w-8 h-8 rounded-lg glass-strong neon grid place-items-center shadow-glow">
-          <i data-feather="heart" class="w-4 h-4 text-secondary"></i>
-        </span>
+       <span class="w-8 h-8 rounded-lg glass-strong neon grid place-items-center shadow-glow overflow-hidden bg-black"><img src="assets\242704840_555691849056000_3791125399268383836_n-removebg-preview.png" alt="YouthSpark Logo" class="object-cover w-full h-full" />
+    </span>
         <a href="index.html" class="text-xl font-extrabold hover:text-secondary transition">YouthSpark</a>
       </div>
       <div class="hidden md:flex items-center gap-6">
@@ -94,6 +93,7 @@
             <label class="block text-sm font-semibold mb-2">Filter by Category</label>
             <select id="category-filter" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:border-primary focus:outline-none transition">
               <option value="all" class="bg-ink">All Categories</option>
+              <option value="Youth-care" class="bg-ink">Youth Care Publish</option>
               <option value="self-help" class="bg-ink">Self-Help</option>
               <option value="recovery" class="bg-ink">Recovery & Addiction</option>
               <option value="career" class="bg-ink">Career & Skills</option>
@@ -103,6 +103,64 @@
           </div>
         </div>
       </div>
+
+      <section class="mb-16 reveal">
+  <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+    <i data-feather="book-open" class="w-8 h-8 text-secondary"></i>
+    Youth Care Published Books
+  </h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Book 1 -->
+    <div class="book-card glass rounded-2xl p-5 neon">
+      <div class="book-cover bg-gradient-to-br from-purple-500/30 to-pink-500/30 rounded-xl h-48 mb-4 relative overflow-hidden flex items-center justify-center">
+        <img src="assets/book1.png" alt="Translation of 30th Para" class="absolute inset-0 w-full h-full object-cover rounded-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <i data-feather="book-open" class="w-16 h-16 text-white/80" style="display:none;"></i>
+      </div>
+      <h3 class="font-bold text-lg mb-2">Translation of 30th Para</h3>
+      <p class="text-sm text-white/70 mb-4">We often recite Surahs from the 30th para in our daily 5 prayers</p>
+      <div class="flex items-center justify-between">
+        <span class="text-xs bg-primary/20 text-primary px-3 py-1 rounded-full">PDF • 138 Pages</span>
+        <a href="https://drive.google.com/file/d/1EGoszSQKdm3fDBaZ7YOOq115yEzVUgKC/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-secondary font-semibold hover:text-primary transition">
+          <i data-feather="download" class="w-4 h-4"></i> Download PDF
+        </a>
+      </div>
+    </div>
+
+    <!-- Book 2 -->
+    <div class="book-card glass rounded-2xl p-5 neon">
+      <div class="book-cover bg-gradient-to-br from-blue-500/30 to-cyan-500/30 rounded-xl h-48 mb-4 relative overflow-hidden flex items-center justify-center">
+        <img src="assets/book2.png" alt="Namaz Ka Tarjuma" class="absolute inset-0 w-full h-full object-cover rounded-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <i data-feather="book-open" class="w-16 h-16 text-white/80" style="display:none;"></i>
+      </div>
+      <h3 class="font-bold text-lg mb-2">[translate:Namaz Ka Tarjuma]</h3>
+      <p class="text-sm text-white/70 mb-4">Translation of the Namaz is also necessary</p>
+      <div class="flex items-center justify-between">
+        <span class="text-xs bg-primary/20 text-primary px-3 py-1 rounded-full">PDF • 24 Pages</span>
+        <a href="https://drive.google.com/file/d/16ztTZTZKyfEfhJNxnBYGgF5P0eSd5MCV/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-secondary font-semibold hover:text-primary transition">
+          <i data-feather="download" class="w-4 h-4"></i> Download PDF
+        </a>
+      </div>
+    </div>
+
+    <!-- Book 3 -->
+    <div class="book-card glass rounded-2xl p-5 neon">
+      <div class="book-cover bg-gradient-to-br from-green-500/30 to-emerald-500/30 rounded-xl h-48 mb-4 relative overflow-hidden flex items-center justify-center">
+        <img src="assets/book3.png" alt="Allah Ki Pehachan" class="absolute inset-0 w-full h-full object-cover rounded-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <i data-feather="book-open" class="w-16 h-16 text-white/80" style="display:none;"></i>
+      </div>
+      <h3 class="font-bold text-lg mb-2">[translate:Allah Ki Pehachan]</h3>
+      <p class="text-sm text-white/70 mb-4">99 names of Allah with the meaning</p>
+      <div class="flex items-center justify-between">
+        <span class="text-xs bg-primary/20 text-primary px-3 py-1 rounded-full">PDF •  Pages</span>
+        <a href="https://drive.google.com/file/d/1KLDy1fQ7pAY5XTPqLX6o5vnDSPoJQ2aG/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-secondary font-semibold hover:text-primary transition">
+          <i data-feather="download" class="w-4 h-4"></i> Download PDF
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <!-- Self-Help Books -->
       <section class="mb-16 reveal">
